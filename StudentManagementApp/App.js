@@ -1,13 +1,15 @@
+import 'react-native-gesture-handler';
+import 'react-native-reanimated';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import DrawerNavigator from './src/navigation/DrawerNavigator';
-import { ThemeProvider } from './src/context/ThemeContext'; // optional, if using
+import RootNavigator from './src/navigation/RootNavigator';
+import { ThemeProvider } from './src/context/ThemeContext';
 
 export default function App() {
   return (
     <ThemeProvider>
       <NavigationContainer>
-        <DrawerNavigator />
+        <RootNavigator />
       </NavigationContainer>
     </ThemeProvider>
   );

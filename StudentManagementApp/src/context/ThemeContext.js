@@ -1,6 +1,24 @@
-// src/context/ThemeContext.js
 import React, { createContext, useState, useContext } from 'react';
-import { lightTheme, darkTheme } from '../theme/theme';
+
+const lightTheme = {
+  mode: 'light',
+  colors: {
+    background: '#f9fafb',
+    card: '#ffffff',
+    text: '#1e293b',
+    accent: '#2563eb',
+  },
+};
+
+const darkTheme = {
+  mode: 'dark',
+  colors: {
+    background: '#1e293b',
+    card: '#334155',
+    text: '#f1f5f9',
+    accent: '#3b82f6',
+  },
+};
 
 const ThemeContext = createContext();
 
